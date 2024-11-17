@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lamg="id">
+  <head>
+    <title>form pemesanan pizza</title>
+  </head>
+ <body>
+   <fieldset>
+     <legend> Form Pemesanan Pizza</legend>
+     <h1> Selamat Datang Di Boyor's Pizza </h1>
+     <p>Silahkan isi pesanan anda disini!</p>
+     <h6 style="color:red;">*pesanan loh yaaa, bukan pasangan apalagi masalah hidup :)</h6>
+     <form action="pesanan_pizza.html">
+       <table>
+         <thead>
+           <tr>
+             <td> Informasi Anda </td>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td><label for="nama">Nama:</label></td>
+             <td><input type="text" id="nama" name="nama" required></td>
+           </tr>
+           <tr>
+             <td><label for="alamat">Alamat:</label></td>
+             <td><input type="text" id="alamat" name="alamat" required></td>
+           </tr>
+           <tr>
+             <td><label for="notelp">No Telepon:</label></td>
+             <td><input type="number" id="notelp" name="notelp" required></td>
+           </tr>
+<tr>
+             <td><label for="email">Email:</label></td>
+             <td><input type="email" id="email" name="email" required></td>
+           </tr>
+<tr>
+             <td><label for="notes">Note Pesanan:</label></td>
+             <td><textarea name="notes" id="notes" required placeholder="Tidak lebih dari 400 karakter"></textarea>
+             </textarea></td>
+           </tr>
+           
+         </tbody>
+       </table>
+       <h4> Pilih Salah Satu</h4>
+        <label for="crust">Crust</label><br>
+       <input type="radio" id="crust" name="crust"></input>
+        <label for="pp">Pizza Padang</label><br>
+       <input type="radio" id="pp" name="crust"></input>
+ <label for="db">Double Box</label><br>
+       <input type="radio" id="db" name="crust"></input>
+ <label for="cs">Chicken Smackdown</label><br>
+       <input type="radio" id="cs" name="crust"></input>
+        <label for="sm">Satu Meter</label><br>
+       
+       <label for="">Topping (Pilih Lebih Dari Satu)</label><br>
+       
+       <input type="checkbox" id="topping" value="bg">bawang goreng<br>
+        <input type="checkbox" id="topping" value="mr">mozzarella<br>
+        <input type="checkbox" id="topping" value="ib">ikan bawal<br>
+       <input type="checkbox" id="topping" value="sa">sayur asem<br>
+       
+       <h4>Berapa nih maunya??</h4>
+       <label for="">Pesan Menu:</label>
+       <input type="number" min="1" max="10"
+       <br><br>
+       
+       <button type="submit" name="submit">Gass Pesen</button>
+       <button type="reset" name="reset">Reset</button>
+       
+     </form>
+     
+   </fieldset>
+ </body>
+  
+  
+  
+</html>

@@ -1,0 +1,34 @@
+#header {background-color: chocolate;
+}
+#header h1 {text-align: center;
+color: blue;
+}
+#header blockquote {text-align: center;
+background-color: yellow;
+}
+#header blockquote #soekarno {background-color: yellow;
+}
+ul {text-align: center;}
+body {background-color: lightblue;}
+p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: blue;
+}
+p {text-align: justify;}
+li {text-align: left; text-align justify}
+.koleksi img {width: 23%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gambar img {width: 25%;
+          margin-left: auto;
+          margin-right: auto;
+          display: center;
+}
+.promo {text-align: center;}
+
+
+.tokopedia {border: 2px solid;background-color: green;}
+.Shopee {border: 2px solid;background-color: #EC8305;}
+.bukalapak {border: 2px solid;background-color: #CC2B52;}

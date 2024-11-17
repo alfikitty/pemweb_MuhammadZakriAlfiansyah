@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gizi {
+    background-color: chocolate;
+    padding: 20px;
+    color: beige;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+.gizi:hover{
+    transform: scale(.9);
+    transition:.4s ;
+}
+tbody{
+    text-align: center;
+}
+thead tr{
+    background-color: #5B9BD5;
+}
+tbody tr:nth-child(even){
+    background-color: #DEEAF6;
+}
