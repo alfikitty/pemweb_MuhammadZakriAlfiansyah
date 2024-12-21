@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+    <script>
+        function ontentikasi(){
+            let admin = "ahmad2017";
+            let pass = "integrity";
+            var username = document.getElementById("username").value
+            var password = document.getElementById("password").value
+
+            if (username == "ahmad2017" && pass == "integrity"){
+                alert("Login Berhasil");
+                form.setAttribute("action", "http://localhost/Pemweb1-7/pertemuan%2011/");
+            } else {
+                alert("Login Gagal, Coba Lagi!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Halaman Login
+    </h1>
+    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password">
+        <br>
+        <button type="submit" onclick="ontentikasi()">Login</button>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganti Gambar</title>
+
+</head>
+<script>
+    function tampilGambar(){
+        let nilaiTerpilih = document.getElementById("pilihGambar").value;
+        switch (nilaiTerpilih) {
+            case "Gambar1":
+                gambarPilih.src = "img/1.jpg";
+                break;
+            case "Gambar2":
+                gambarPilih.src = "img/2.jpg";
+                break;
+            case "Gambar3":
+                gambarPilih.src = "img/2a.jpeg";
+                break;
+            case "Gambar4":
+                gambarPilih.src = "img/6.jpg";
+                break;
+        }
+    }
+</script>
+<body>
+    <h2>Switch Image</h2>
+    <label for="pilihGambar">
+        Pilih Gambar
+    </label>
+    <select id="pilihGambar" onchange="tampilGambar()">
+    <option value="Gambar1">MR Ambativasi</option>
+    <option value="Gambar2">Timothy Ronald</option>
+    <option value="Gambar3">Miss Alfiansyah</option>
+    <option value="Gambar4">Mister Alfiansyah</option>
+</select>
+<img src="img/1.jpg" alt="" id="gambarPilih" width="300px">
+</body>
+</html>

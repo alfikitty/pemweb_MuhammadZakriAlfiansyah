@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let jagoan = {
+        nama; "goku",
+        power: 10000,
+        nyawa: 3,
+        makan : function(kalori){
+            //this.power += kalori;
+            this.power = this.power + kalori;
+        },
+        pukul:function(musuh,kekuatan){
+            musuh.power -= kekuatan;
+            this.power += kekuatan;
+        }
+    };
+    let musuh = {
+        nama: "okta",
+        power: 500000,
+    }
+    function run(){
+        console.log("power" = jagoan.nama + " : " + jagoan.power);
+        console.log("power" = musuh.nama + " : " + musuh.power);
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+
+</head>
+<body>
+    <h1>Form Validasi</h1>
+    <form id="validationForm">
+        <div class="form-group">
+            <label for="nama">Nama Pelanggan:</label>
+            <input type="text" id="nama" name="nama" maxlength="30">
+            <span class="error" id="errorNama"></span>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="errorEmail"></span>
+        </div>
+        <div class="form-group">
+            <label for="jam">Jam Keberangkatan:</label>
+            <input type="text" id="jam" name="jam" placeholder="HH.MM">
+            <span class="error" id="errorJam"></span>
+        </div>
+        <div class="form-group">
+            <label for="tujuan">Tujuan Keberangkatan:</label>
+            <input type="text" id="tujuan" name="tujuan">
+            <span class="error" id="errorTujuan"></span>
+        </div>
+        <div class="form-group">
+            <label for="jumlah">Jumlah Tiket:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" max="10">
+            <span class="error" id="errorJumlah"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="result" class="result" style="display: none;"></div>
+
+    <script>
+        document.getElementById('validationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let isValid = true;
+
+            document.querySelectorAll('.error').forEach(error => error.textContent = '');
+            document.querySelectorAll('input').forEach(input => input.classList.remove('invalid'));
+
+            const nama = document.getElementById('nama').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const jam = document.getElementById('jam').value.trim();
+            const tujuan = document.getElementById('tujuan').value.trim();
+            const jumlah = document.getElementById('jumlah').value.trim();
+                
+            if (!nama) {
+                isValid = false;
+                document.getElementById('errorNama').textContent = 'Nama wajib diisi.';
+                document.getElementById('nama').classList.add('invalid');
+            }
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                isValid = false;
+                document.getElementById('errorEmail').textContent = 'Email tidak valid.';
+                document.getElementById('email').classList.add('invalid');
+            }
+            const jamRegex = /^([01]?\d|2[0-3])\.([0-5]\d)$/;
+            if (!jam || !jamRegex.test(jam)) {
+                isValid = false;
+                document.getElementById('errorJam').textContent = 'Jam harus dalam format HH.MM (00.00 - 23.59).';
+                document.getElementById('jam').classList.add('invalid');
+            }
+            if (!tujuan) {
+                isValid = false;
+                document.getElementById('errorTujuan').textContent = 'Tujuan wajib diisi.';
+                document.getElementById('tujuan').classList.add('invalid');
+            }
+            const jumlahInt = parseInt(jumlah, 10);
+            if (!jumlah || isNaN(jumlahInt) || jumlahInt < 1 || jumlahInt > 10) {
+                isValid = false;
+                document.getElementById('errorJumlah').textContent = 'Jumlah tiket harus antara 1-10.';
+                document.getElementById('jumlah').classList.add('invalid');
+            }
+            if (isValid) {
+                const resultDiv = document.getElementById('result');
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = `
+                    <p><strong>Nama Pelanggan:</strong> ${nama}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Jam Keberangkatan:</strong> ${jam}</p>
+                    <p><strong>Tujuan Keberangkatan:</strong> ${tujuan}</p>
+                    <p><strong>Jumlah Tiket:</strong> ${jumlah}</p>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
