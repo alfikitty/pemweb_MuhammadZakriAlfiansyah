@@ -1,0 +1,319 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f1c40f;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Hero Section Styles */
+.hero-image {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-image h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* About Us Section */
+#about {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+    margin-top: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Branches Section */
+#branches {
+    background-color: #ecf0f1;
+    padding: 50px 0;
+}
+
+#branches h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.panel {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+.panel h4 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.panel p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+/* Promotions Table */
+.promotion-table th,
+.promotion-table td {
+    text-align: center;
+    padding: 15px;
+}
+
+.promotion-table th {
+    background-color: #f39c12;
+    color: white;
+}
+
+.promotion-table td {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
+.promotion-table tr:hover {
+    background-color: #f1c40f;
+    cursor: pointer;
+}
+
+/* Slider Styles */
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f39c12;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
+
+/* Contact Form */
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form .form-label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+form .form-control {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+form button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero-image h1 {
+        font-size: 2rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #branches h2 {
+        font-size: 2rem;
+    }
+
+    .panel h4 {
+        font-size: 1.5rem;
+    }
+
+    .promotion-table th,
+    .promotion-table td {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image h1 {
+        font-size: 1.5rem;
+    }
+
+    #about h2 {
+        font-size: 1.8rem;
+    }
+
+    .panel h4 {
+        font-size: 1.2rem;
+    }
+
+    .promotion-table th,
+    .promotion-table td {
+        font-size: 0.8rem;
+    }
+}
+/* Navbar Styling */
+nav {
+    background-color: #343a40; /* Dark background for the navbar */
+    padding: 10px 0;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #f39c12; /* Golden color for the brand name */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item .nav-link {
+    color: #fff; /* White color for nav links */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 20px; /* Space between the nav links */
+    transition: color 0.3s ease-in-out; /* Smooth transition for color change */
+}
+
+/* Hover Effect for Nav Links */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12; /* Golden color on hover */
+}
+
+/* Active Nav Link */
+.navbar-nav .nav-item .nav-link.active {
+    color: #f39c12; /* Highlight active link with golden color */
+    font-weight: bold;
+}
+
+/* Navbar Toggler (Hamburger Menu) */
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: #f39c12; /* Golden color for hamburger icon */
+}
+
+/* Collapse Navbar for Small Screens */
+.navbar-collapse {
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+/* Navbar for Large Screens */
+@media (min-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 30px; /* More space between links for large screens */
+    }
+
+    .navbar-nav .nav-item:last-child {
+        margin-right: 0; /* No margin for the last item */
+    }
+}
+
+/* Navbar for Small Screens */
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        margin-right: 0; /* Remove right margin for mobile view */
+        text-align: center; /* Center align text on small screens */
+        padding: 15px 0; /* Add some padding for the items */
+    }
+}

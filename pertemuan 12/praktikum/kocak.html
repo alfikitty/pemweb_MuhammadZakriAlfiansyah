@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Luxe</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJt3W4fG6oHf5Dr4EcjFfFq5pVvnVVmi03j5g5KpT6v5dJpErjw3grgZO7p6" crossorigin="anonymous">
+    <!-- Custom CSS -->
+     <link rel="stylesheet" href="kocak.css">
+    <style>
+        .hero-image {
+            background-image: url('images/header.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+        .breadcrumb {
+            background-color: transparent;
+        }
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .promotion-table th, .promotion-table td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hotel Luxe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#branches">Branches</a></li>
+                <li class="nav-item"><a class="nav-link" href="#promotions">Promotions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section (Header Image) -->
+<div class="hero-image d-flex justify-content-center align-items-center text-white">
+    <h1>Welcome to Hotel Luxe</h1>
+</div>
+
+<!-- About Us Section -->
+<section id="about" class="container py-5">
+    <h2>About Us</h2>
+    <p>Hotel Luxe offers luxurious stays in various locations. Our services include premium rooms, exclusive packages, and top-notch customer service.</p>
+</section>
+
+<!-- Branches Section -->
+<section id="branches" class="container py-5">
+    <h2>Our Branches</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Branch 1: Bali</h4>
+                    <p>Located in the heart of Bali, offering breathtaking ocean views.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Branch 2: Jakarta</h4>
+                    <p>Our flagship hotel in the bustling city of Jakarta, with 24/7 service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4>Branch 3: Yogyakarta</h4>
+                    <p>Located near the historical landmarks, with modern amenities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promotions Section -->
+<section id="promotions" class="container py-5">
+    <h2>Our Promotions</h2>
+    <table class="table promotion-table">
+        <thead>
+            <tr>
+                <th>Paket</th>
+                <th>Harga</th>
+                <th>Waktu</th>
+                <th>Syarat & Ketentuan</th>
+                <th>Deskripsi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Weekend Getaway</td>
+                <td>Rp 1,500,000</td>
+                <td>Weekend Only</td>
+                <td>Min 2 people</td>
+                <td>Enjoy a weekend in luxury with breakfast included.</td>
+            </tr>
+            <tr>
+                <td>Romantic Escape</td>
+                <td>Rp 2,000,000</td>
+                <td>Anytime</td>
+                <td>Free dinner for two</td>
+                <td>A romantic getaway with candlelight dinner.</td>
+            </tr>
+            <tr>
+                <td>Family Fun</td>
+                <td>Rp 3,000,000</td>
+                <td>School Holidays</td>
+                <td>Kids under 12 stay free</td>
+                <td>A family-friendly vacation with access to all amenities.</td>
+            </tr>
+            <tr>
+                <td>Business Retreat</td>
+                <td>Rp 4,000,000</td>
+                <td>Anytime</td>
+                <td>Meeting Room Access</td>
+                <td>Perfect for business conferences and retreats.</td>
+            </tr>
+            <tr>
+                <td>Luxury Suite</td>
+                <td>Rp 5,000,000</td>
+                <td>Anytime</td>
+                <td>VIP Access</td>
+                <td>Stay in the most luxurious suite with all the amenities.</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Image Slider Section -->
+<section id="slider" class="container py-5">
+    <h2>Our Facilities</h2>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/facility1.jpg" class="d-block w-100" alt="Facility 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/facility2.jpg" class="d-block w-100" alt="Facility 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/facility3.jpg" class="d-block w-100" alt="Facility 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="container py-5">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light py-4 text-center">
+    <p>&copy; 2024 Hotel Luxe - All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb6yr9zXnQq6N4QZq4YmfPbG4ndSkdS2a8QpT5h8ar2fYh4f0b" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0Qfcj9f+s9zXGNN1mwFh5K1XrqkpujJl0I5K8XQFgHy7xD1G0" crossorigin="anonymous"></script>
+
+</body>
+</html>
